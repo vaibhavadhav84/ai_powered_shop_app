@@ -30,7 +30,7 @@ Future<void> initDependencies() async {
   // Configure Gemini Model (In production, load this from dotenv!)
   const geminiApiKey = String.fromEnvironment(
     'GEMINI_API_KEY',
-    defaultValue: 'AIzaSyDkF3gfshL1CxcM6WdAocmQECQ0kGfWCIE',
+    defaultValue: '',
   );
   sl.registerLazySingleton<GenerativeModel>(
     () =>
